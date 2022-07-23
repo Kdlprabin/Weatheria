@@ -5,7 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+    <button><img src="icons/menu.png" alt=""></button>
+    <input type="text" id="search-box">     
+    </header>
+    <div id="dp-image">
+        <p id="location">North Hertfordshine</p>
+        <div id="temperature-mainWeather">
+            <p id="temperature">25 C</p>
+            <p id="mainWeather">Mostly Sunny</p>
+        </div>
+        <div id="date-time">
+            <p id="day">Sunday</p>
+            <p id="date">July 23, 2022</p>
+        </div>
+    </div>
+    <div id="four-boxes">
+        <div>
+            <p>Humidity</p>
+            <hr>
+            <div class="with-img">
+                <img src="icons/humidity.png" alt="">
+                <p id="humidity"></p>
+            </div>
+        </div>
+        <div>
+            <p>Pressure</p>
+            <hr>
+            <div class="with-img">
+                <img src="icons/pressure.png" alt="">
+                <p id="pressure"></p>
+            </div>
+        </div>
+        <div>
+            <p>Wind Speed</p>
+            <hr>
+            <div class="with-img">
+                <img src="icons/wind.png" alt="">
+                <p id="wind-speed"></p>
+            </div>
+        </div>
+        <div>
+            <p>Feels Like</p>
+            <hr>
+            <div class="with-img">
+                <img src="icons/sun.png" alt="">
+                <p id="feels-like"></p>
+            </div>
+        </div>
+    </div>
+    <div id="chance-of-rain">
+        <label for="">Chance Of Rain</label>
+        <div id="bars">
+            <h3>6am</h3>
+            <div><p></p></div>
+            <h3>12am</h3>
+            <div><p></p></div>
+            <h3>6pm</h3>
+            <div><p></p></div>
+            <h3>12pm</h3>
+            <div><p></p></div>
+        </div>
+    </div>
+    <div id="sun">
+        <div>
+            <p>Sunrise</p><hr><br>
+            <p id="sunrise">5 : 10 Am</p>
+        </div>
+        <div>
+            <p>Sunset</p><hr><br>
+            <p id="sunset">5 : 10 Pm</p>
+        </div>
+    </div>
 </body>
 </html>

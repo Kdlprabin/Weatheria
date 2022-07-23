@@ -1,0 +1,150 @@
+*{
+    position: relative;
+    margin: 0 auto;
+}
+body{
+    margin: 1vh auto;
+    background-color: rgb(213, 215, 216);
+    min-width: 400px;
+}
+img{
+    height: 3vh;
+    width: 3vh;
+    padding: 2px;
+}
+button{
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 1 1 2 rgba(249, 249, 249, 0.518);
+    background-color: rgb(7, 7, 134);
+}
+#search-box{
+    background-color: rgb(230, 233, 235);
+    padding: 1vh;
+    border-radius: 10px;
+    width: 65%;
+    border: 0.1px solid grey;
+    box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.475);
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    margin: 2vh auto;
+}
+#dp-image{
+    background-image: url(images/night.jpg);
+    background-size: cover;
+    width: 90%;
+    color: white;
+    padding: 1vh;
+    height: fit-content;
+    margin: 1vh auto;
+    border-radius: 10px;
+}
+#dp-image #location{
+    font-size: 4vh;
+}
+#four-boxes{
+    width: 90%;
+    height: 25vh;
+    display: grid;
+    margin-bottom: 1vh;
+    grid-template-columns: 1fr 1fr;
+}
+#four-boxes div{
+    background-color: rgb(7, 7, 134);
+    margin: 1vh;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    height: auto;
+}
+#chance-of-rain{
+    width: 90%;
+    height: 37vh;
+    background-color: rgb(241, 241, 239);
+    padding: 1vh;
+    border-radius: 10px;
+}
+#chance-of-rain label{
+    font-size: 3vh;
+    margin-bottom: 3vh;
+}
+#bars div{
+    height: 3vh;
+    margin: 1vh 2vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+#bars{
+    margin-top: 1vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#bars div p{
+    background-color: rgb(7, 7, 134);
+    height: 100%;
+    border-radius: 20px;
+    width: 40%;
+    margin: 0;
+}
+#sun{
+    margin: 2vh auto;
+    border-radius: 10px;
+    width: 90%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#sun div{
+    background-color: rgb(7, 7, 134);
+    margin: 0 5px;
+    color: white;
+    border-radius: 10px;
+    padding: 1vh;
+    font-size: 3vh;
+}
+#sunrise,#sunset{
+    text-align: center;
+}
+img{
+    height: 4vh;
+    width: auto;
+}
+.with-img{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+hr{
+    margin: 0 1vh;
+}
+#temperature-mainWeather{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#temperature{
+    font-size: 11vh;
+}
+#mainWeather{
+    font-size: 3vh;
+}
+#date-time{
+    font-size: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+@media (min-width:750px){
+    #mainWeather{
+        font-size: 6vh;
+    }
+    #four-boxes p{
+        font-size: 3vh;
+    }
+}
+@media (max-width:520px){
+    #temperature{
+        font-size: 6vh;
+    }
+}
